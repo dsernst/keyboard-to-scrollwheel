@@ -20,9 +20,9 @@ def scroll_mac(lines: int):
 def on_release(key):
     try:
         if key.char == '[':
-            scroll_mac(scroll_lines)
-        elif key.char == ']':
             scroll_mac(-scroll_lines)
+        elif key.char == ']':
+            scroll_mac(scroll_lines)
     except AttributeError:
         pass  # Ignore special keys
 
