@@ -20,7 +20,7 @@ Create and activate a virtual environment:
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-pip install pynput pyobjc
+pip install -r requirements.txt
 ```
 
 ### Usage
