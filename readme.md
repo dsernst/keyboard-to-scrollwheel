@@ -44,14 +44,8 @@ You must grant Accessibility and Input Monitoring permissions:
 
 ### Notes
 
-- Scroll amount is hardcoded to 3 “lines” per keypress
+- Scroll per keypress set as `scroll_lines` in script
 - Only works while the script is running
 - All scrolls are sent to the currently focused window/app
-
-### Optional Enhancements
-
-- Auto-launch on login
-- Background service
-- Configurable scroll speed or hotkeys
 
 Pull requests welcome.
