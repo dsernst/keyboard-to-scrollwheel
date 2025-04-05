@@ -17,7 +17,7 @@ def scroll_mac(lines: int):
     )
     CGEventPost(kCGHIDEventTap, event)
 
-def on_press(key):
+def on_release(key):
     try:
         if key.char == '[':
             scroll_mac(scroll_lines)
@@ -26,5 +26,5 @@ def on_press(key):
     except AttributeError:
         pass  # Ignore special keys
 
-with keyboard.Listener(on_press=on_press) as listener:
+with keyboard.Listener(on_release=on_release) as listener:
     listener.join()
