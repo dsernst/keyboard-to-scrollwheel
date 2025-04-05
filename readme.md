@@ -7,6 +7,7 @@ This script remaps the `[` key to **scroll up** and `]` key to **scroll down** u
 - Global key listener
 - Native-feeling scroll in any app (e.g., Chrome, VSCode)
 - Minimal dependencies
+- Scrolling triggers on key release (not while holding)
 
 ## Requirements
 
@@ -31,7 +32,7 @@ Run the script:
 python scroll_keys.py
 ```
 
-Then press `[` or `]` to trigger vertical scrolling.
+Then press and release `[` or `]` to trigger vertical scrolling. Scrolling only occurs when you release the key, not while holding it down.
 
 ### macOS Permissions
 
