@@ -13,9 +13,13 @@ This script remaps the `[` key to **scroll up** and `]` key to **scroll down** u
 - macOS
 - Python 3.x
 
-### Install Dependencies
+## Setup (Using venv)
+
+Create and activate a virtual environment:
 
 ```bash
+python3 -m venv .venv
+source .venv/bin/activate
 pip install pynput pyobjc
 ```
 
